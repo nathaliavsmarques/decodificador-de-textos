@@ -1,0 +1,82 @@
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    header img {
+        padding-left: 2rem;
+    }
+
+    header #titulo {
+        font-size: 2.5rem;
+        display: block;
+        margin: auto;
+    }
+
+    #texto {
+        font-size: 2.5rem;
+        margin: 2rem;
+    }
+
+    #criptografar,
+    #descriptografar,
+    #limpar,
+    #copiar {
+        font-size: 1.5rem;
+        padding: 1rem;
+    }
+
+    #atencao {
+        font-size: 1.2rem;
+    }
+
+    #caixa-de-texto {
+        width: 70vw;
+        
+    }
+
+    footer {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    header img {
+       padding: 2rem 0rem 0rem 3rem;
+    }
+
+    header #titulo {
+        font-size: 3rem;
+        margin: auto;
+    }
+
+    #texto {
+        width: 50rem;       
+    }
+
+    #atencao p {
+        margin-left: 1rem;       
+    }
+
+    #criptografar,
+    #descriptografar,
+    #limpar,
+    #copiar {
+        font-size: 1.4rem;
+       padding: 1.5rem;
+    }
+
+    #caixa-de-texto {
+        font-size: 1.5rem;
+        width: 50vw;
+    }
+
+    #caixa-de-texto h2 {
+        margin-bottom: 1rem;
+
+    }
+
+    footer {
+        font-size: 1.5rem;
+        
+    }
+    footer a:hover {
+        font-weight: 900;
+    }
+}

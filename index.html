@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo/style.css">
+    <link rel="stylesheet" href="estilo/media-query.css">
+    <title>Decodificador de textos</title>
+</head>
+<body>
+    <main>
+        <header>
+            <img src="imagens/logomarcar_alura.png" alt="Imagem da logomarca da Alura">
+            <h1 id="titulo">Decodificador de texto</h1>
+        </header>
+        <section>
+            <textarea name="texto" id="texto" cols="50" rows="10" placeholder="Digite aqui seu texto"></textarea>
+        </section>
+        <div id="atencao">
+            <img src="imagens/vector_exclamação.png" alt="Símbolo de exclamação">
+            <p>Apenas letras minúsculas e sem acento.</p>
+        </div>
+        <div id="butoes">
+            <button id="criptografar">Criptografar</button>
+            <button id="descriptografar">Descriptografar</button>
+            <button id="limpar">Limpar caixa de texto </button>
+        </div>
+        <section id="caixa-de-texto">
+            <h2>Nenhuma mensagem encontrada</h2>
+            <p>Digite um texto que você deseja criptografar ou descriptografar.</p>
+        </section>
+        <div>
+            <button id="copiar" type="submit">Copiar Texto</button>
+            <p id="texto-copiado"></p>
+        </div>
+    </main>
+    <footer>
+        <p>Projeto desenvolvido por <a href="https://www.linkedin.com/in/nathaliavsmarques/" target="_blank"             rel="external">Nathalia Marques</a></p>
+    </footer>
+</body>
+<script src="js/script.js"></script>
+</html>
