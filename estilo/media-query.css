@@ -73,10 +73,18 @@
     }
 
     footer {
+       
         font-size: 1.5rem;
         
     }
-    footer a:hover {
-        font-weight: 900;
+
+    footer #logos img {
+        margin-top: 1rem;
+        width: 3rem;
+    }
+
+    footer #logos img:hover {
+        cursor: pointer;
+        transform: scaleX(1.1);
     }
 }

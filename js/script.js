@@ -3,7 +3,7 @@ let caixaDeTexto = document.querySelector('#caixa-de-texto');
 let btnCriptografar = document.querySelector('#criptografar');
 let btnDescriptografar = document.querySelector('#descriptografar');
 let btnCopiar = document.querySelector('#copiar');
-let btnLimpar = document.querySelector('#limpar')
+let btnLimpar = document.querySelector('#limpar');
 
 
 function criptografar() {
@@ -22,12 +22,11 @@ function criptografar() {
         };
     });
     caixaDeTexto.innerHTML = txtCriptografado;
-
-
 }
 
+
 function descriptografar() {
-    let txt = texto.value;
+    let txt = texto.value;    
     let txtDescriptografado = txt.replace(/enter|imes|ai|ober|ufat/g, function (txtD) {
         if (txtD === 'enter') {
             return 'e'
@@ -56,8 +55,17 @@ function limpar() {
 
 }
 
-btnCriptografar.addEventListener('click', () => criptografar());
+btnCriptografar.addEventListener('click', function () {
+    if(/^[a-z0-9]+/.test(texto.value)) {
+        criptografar();    
+    } else {
+        caixaDeTexto.innerHTML = `<p> Não é aceito letras maiúsculas ou acentos. Por favor reescreva sua mensagem.</p>`       
+    }
+        
+   
+});
+
 btnDescriptografar.addEventListener('click', () => descriptografar())
 btnCopiar.addEventListener('click', () => copiar());
-btnLimpar.addEventListener('click', () => limpar()); 
+btnLimpar.addEventListener('click', () => limpar());
 
