@@ -9,25 +9,24 @@ let btnLimpar = document.querySelector('#limpar');
 function criptografar() {
     let txt = texto.value;
     let txtCriptografado = txt.replace(/e|i|a|o|u/g, function (txt) {
-        if (txt === 'e') {
-            return 'enter'
-        } else if (txt === 'i') {
-            return 'imes'
-        } else if (txt === 'a') {
-            return 'ai'
-        } else if (txt === 'o') {
-            return 'ober'
-        } else if (txt === 'u') {
-            return 'ufat'
-        };
-    });
-    caixaDeTexto.innerHTML = txtCriptografado;
-}
-
+            if (txt === 'e') {
+                return 'enter'
+            } else if (txt === 'i') {
+                return 'imes'
+            } else if (txt === 'a') {
+                return 'ai'
+            } else if (txt === 'o') {
+                return 'ober'
+            } else if (txt === 'u') {
+                return 'ufat'
+            }; 
+        })
+        caixaDeTexto.innerHTML = txtCriptografado;
+    }
 
 function descriptografar() {
-    let txt = texto.value;    
-    let txtDescriptografado = txt.replace(/enter|imes|ai|ober|ufat/g, function (txtD) {
+    let txt = texto.value;
+    let txtDescriptografado = txt.replace(/enter|imes|ai|ober|ufat/g / i, function (txtD) {
         if (txtD === 'enter') {
             return 'e'
         } else if (txtD === 'imes') {
@@ -43,6 +42,7 @@ function descriptografar() {
     caixaDeTexto.innerHTML = txtDescriptografado;
 }
 
+
 function copiar() {
     navigator.clipboard.writeText(caixaDeTexto.innerHTML);
 
@@ -55,16 +55,7 @@ function limpar() {
 
 }
 
-btnCriptografar.addEventListener('click', function () {
-    if(/^[a-z0-9]+/.test(texto.value)) {
-        criptografar();    
-    } else {
-        caixaDeTexto.innerHTML = `<p> Não é aceito letras maiúsculas ou acentos. Por favor reescreva sua mensagem.</p>`       
-    }
-        
-   
-});
-
+btnCriptografar.addEventListener('click', () => criptografar());
 btnDescriptografar.addEventListener('click', () => descriptografar())
 btnCopiar.addEventListener('click', () => copiar());
 btnLimpar.addEventListener('click', () => limpar());

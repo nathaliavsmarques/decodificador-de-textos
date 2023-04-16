@@ -1,15 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     font-family: 'Inter', sans-serif;
 }
 
-body{
+body {
     background-image: linear-gradient(to bottom, #ffff, #3d4079);
-    min-height: 100vh;       
-    
+    min-height: 100vh;
+
 }
 
 header {
@@ -17,7 +17,7 @@ header {
 }
 
 header img {
-    padding: 1rem 0 0 1rem;    
+    padding: 1rem 0 0 1rem;
     height: 4rem;
 }
 
@@ -41,7 +41,7 @@ header #titulo {
     border: none;
     border-radius: 10px;
     outline: none;
-   
+
 }
 
 #texto::placeholder {
@@ -50,19 +50,29 @@ header #titulo {
     font-weight: 700;
 }
 
+#atencao  img{ 
+    width: 1rem;
+    height: 1rem;
+}
+
 #atencao {
-   display: flex;
-   justify-content: center;
-   margin: .5rem;
-   font-weight: 700;
+    font-size: 0.9rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin: .5rem;
+
 }
 
 #butoes {
     padding: 2rem;
-    text-align: center; 
+    text-align: center;
 }
 
-#criptografar, #descriptografar, #limpar, #copiar {
+#criptografar,
+#descriptografar,
+#limpar,
+#copiar {
     color: #0A3871;
     font-size: .9rem;
     font-weight: 700;
@@ -72,7 +82,10 @@ header #titulo {
     border-radius: 12px;
 }
 
-#criptografar:hover, #descriptografar:hover, #limpar:hover, #copiar:hover {
+#criptografar:hover,
+#descriptografar:hover,
+#limpar:hover,
+#copiar:hover {
     cursor: pointer;
     color: #cedce6;
     background-color: #0A3871;
@@ -114,10 +127,10 @@ footer #logos img {
 footer a {
     color: #0A3871;
     text-decoration: none;
-      
+
 }
 
-footer a:hover{
+footer a:hover {
     font-weight: 900;
     cursor: pointer;
 }
