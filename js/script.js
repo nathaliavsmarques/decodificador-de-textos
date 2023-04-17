@@ -26,7 +26,7 @@ function criptografar() {
 
 function descriptografar() {
     let txt = texto.value;
-    let txtDescriptografado = txt.replace(/enter|imes|ai|ober|ufat/g / i, function (txtD) {
+    let txtDescriptografado = txt.replace(/enter|imes|ai|ober|ufat/g , function (txtD) {
         if (txtD === 'enter') {
             return 'e'
         } else if (txtD === 'imes') {
